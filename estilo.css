@@ -1,0 +1,48 @@
+/* Estilo de entiendelaia.net. Cada tomo fija su --acento (Claude #E8590C, ChatGPT #2DB37E, Gemini #5B7CFA). */
+:root {
+  --acento: #E8590C;
+  --tinta: #1C1B19;
+  --suave: #5A5650;
+  --fondo: #FFFFFF;
+  --linea: #E4E0DA;
+  --caja-ancho: 44rem;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fondo); color: var(--tinta); font: 400 1.125rem/1.6 "Source Serif 4", Georgia, serif; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.caja { max-width: var(--caja-ancho); margin: 0 auto; padding: 0 1rem; }
+
+.banda { background: var(--acento); color: #111111; padding: 3rem 0 2.5rem; }
+.volanta { margin: 0 0 1.5rem; font-weight: 600; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; }
+.marca { margin: 0; font: 800 clamp(2.2rem, 7vw, 3.4rem)/1 "Fraunces", Georgia, serif; }
+.marca a { text-decoration: none; }
+.marca em { font-weight: 400; }
+h1 { margin: .6rem 0 0; font: 800 clamp(2.6rem, 9vw, 4.4rem)/1 "Fraunces", Georgia, serif; color: #FFFFFF; }
+.bajada { margin: 1rem 0 0; font-size: 1.15rem; }
+
+main { padding-top: 2rem; padding-bottom: 1rem; }
+.intro { font-size: 1.2rem; }
+h2 { margin: 2.5rem 0 .75rem; font: 800 1.6rem/1.2 "Fraunces", Georgia, serif; }
+h3 { margin: 1.75rem 0 .5rem; font-size: 1.1rem; font-weight: 600; }
+.nota { color: var(--suave); font-size: 1rem; }
+
+.novedades { list-style: none; margin: 0; padding: 0; }
+.novedades li { border-left: 3px solid var(--acento); padding: .1rem 0 .1rem 1rem; }
+.novedades p { margin: .25rem 0; }
+.fecha { font-weight: 600; }
+
+.tabla { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .98rem; }
+th, td { padding: .5rem .6rem .5rem 0; text-align: left; vertical-align: top; border-top: 1px solid var(--linea); }
+th { font-weight: 600; border-top: 2px solid var(--tinta); }
+td:first-child { white-space: nowrap; font-weight: 600; }
+
+.aviso { margin-top: 2.5rem; }
+.pie { padding-top: 1.5rem; padding-bottom: 3rem; color: var(--suave); font-size: .95rem; border-top: 1px solid var(--linea); margin-top: 3rem; }
+
+@media (max-width: 30rem) {
+  body { font-size: 1.05rem; }
+  .banda { padding: 2.25rem 0 2rem; }
+  table { font-size: .92rem; }
+}
